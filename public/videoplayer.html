@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/videoPlayer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Videoplayer</title>
+    <header class="header">
+        <a href="#">
+          <img src="dashboard/logo.png" alt="ReTeach Logo" class="ReTeach-logo" />
+        </a>
+        <form class="search-bar">
+          <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+          <button type="submit" class="search-btn">
+            <img src="dashboard/magnify.svg" />
+          </button>
+        </form>
+        <div class="menu-icons">
+          <!-- <a href="#">
+            <img src="dashboard/video-plus.svg" alt="Upload Video" />
+          </a> -->
+          <!-- <a href="#">
+            <img src="dashboard/apps.svg" alt="Apps" />
+          </a> -->
+          <a href="dashboard.html">
+            <img class="menu-channel-icon" src="dashboard/dash_logo.png" alt="Notifications" />
+          </a>
+          <a href="#">
+            <img class="menu-channel-icon sign-out" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" alt="Your Channel" />
+          </a>
+        </div>
+      </header>
+
+<body>
+    <h1 class="title" >Physics letures:</h1>
+    <div class="context">
+    </div>
+
+
+<div class="area" >
+            <ul class="circles">
+
+
+
+    <div class="container-player">
+        <div id="mediaPlayer">
+            <div class="lds-ring" id=preload><div></div><div></div><div></div><div></div></div>
+            <video id='media-video' preload>
+                <source  src="https://static.videezy.com/system/resources/previews/000/039/526/original/Fly-Through-Formulas-Black.mp4" type='video/mp4'>
+                <source src='parrots.webm' type='video/webm'>
+            </video>
+            <div id="controls">
+                <button id=play><i class="fas fa-pause"></i></button>
+                <button id=audioVolume class="fas fa-volume-off"></button>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+                <div id="timer">
+                    <span id="start"> 0 : 00</span>
+                </div>
+                <button id=expand><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+        <div id="playlist">  
+        </div>
+    </div>
+</ul>
+</div >
+
+
+   <!-- update the version number as needed -->
+   <script src="/__/firebase/7.19.1/firebase-app.js"></script>
+   <!-- include only the Firebase features as you need -->
+   <script src="/__/firebase/7.19.1/firebase-auth.js"></script>
+   <script src="/__/firebase/7.19.1/firebase-firestore.js"></script>
+   <script src="/__/firebase/7.19.1/firebase-database.js"></script>
+ 
+   <!-- initialize the SDK after all desired features are loaded -->
+   <script src="/__/firebase/init.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="js/signout.js"></script>
+
+</body>
+
+</html>
