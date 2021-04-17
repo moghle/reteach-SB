@@ -1,6 +1,10 @@
+
+/* Upload Functionality*/
 var uploader = document.getElementById('uploader');
 var fileButton = document.getElementById('fileButton');
 
+
+/* Upload Functionality*/
 fileButton.addEventListener('change', function (e) {
     //get file
     var file = e.target.files[0];
